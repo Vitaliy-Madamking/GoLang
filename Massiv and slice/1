@@ -9,7 +9,7 @@ func main() {
 	slice := make([]int, n)
 	for i := 0; i < n; i++ {
 		fmt.Scan(&slice[i])
-	}
+	}ы
 
 	// Выводим элементы с чётными индексами через пробе
 
