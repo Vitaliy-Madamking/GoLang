@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func ReverseArray(arr [5]int) [5]int {
+	reversed := [5]int{}
+	for i := range arr {
+		reversed[i] = arr[len(arr)-1-i]
+	}
+	return reversed
+}
+
+func main() {
+	arr := [5]int{10, 20, 30, 40, 50}
+	reversed := ReverseArray(arr)
+	fmt.Println("Исходный:", arr)
+	fmt.Println("Перевёрнутый:", reversed)
+}
