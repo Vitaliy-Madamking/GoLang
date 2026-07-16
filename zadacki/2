@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func SumArray(arr [5]int) int {
+	sum := 0
+	for _, value := range arr {
+		sum += value
+	}
+	return sum
+}
+
+func main() {
+	arr := [5]int{10, 20, 30, 40, 50}
+	result := SumArray(arr)
+	fmt.Println("Сумма:", result)
+}
