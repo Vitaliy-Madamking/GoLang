@@ -1,0 +1,11 @@
+package main
+
+import "fmt"
+
+func main() {
+	fruits := []string{"apple", "banana", "cherry"}
+	fmt.Printf("До добавления в слайс: длина-%d, емкость-%d,%v\n", len(fruits), cap(fruits), fruits)
+
+	fruits = append(fruits, "date")
+	fmt.Printf("После добавления: длина-%d, емкость-%d, %v\n", len(fruits), cap(fruits), fruits)
+}
