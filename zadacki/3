@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func FindMax(arr [5]int) int {
+	max := arr[0]
+
+	for _, value := range arr {
+		if value > max {
+			max = value
+		}
+	}
+	return max
+}
+
+func main() {
+	arr := [5]int{3, 7, 1, 9, 4}
+	result := FindMax(arr)
+	fmt.Println("Максимальный элемент:", result)
+}
